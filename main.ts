@@ -6,15 +6,15 @@
 */
 
 // our varible for Kelvin
-let temperature : number
+let temperatureInKelvin : number
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 // temperature in Kelvin
 input.onButtonPressed(Button.A, function() {
-    temperature = input.temperature()
-    basic.showString('the temperature is:')
-    basic.showNumber(temperature + 273)
-    basic.showString('k')
+    temperatureInKelvin = input.temperature()
+    basic.showString('The temperature is:')
+    basic.showNumber(temperatureInKelvin + 273)
+    basic.showString('K.')
 })
